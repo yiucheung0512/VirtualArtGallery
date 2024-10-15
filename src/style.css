@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --vs-primary: 29 92 255;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  user-select: none !important;
+  background: gray;
+}
+
+#mobileInterface {
+  position: fixed;
+  width: calc(100% - 20px);
+  height: 50vh;
+  pointer-events: none;
+  z-index: 11;
+  bottom: 30px;
+  left: 30px;
+  touch-action: manipulation;
+}
+
+#joystickWrapper1 {
+  pointer-events: auto;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  z-index: 12;
+  touch-action: manipulation;
+  background-color: rgba(red, 0.2);
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+dialog {
+  padding: 1rem 3rem;
+  background: white;
+  padding-top: 2rem;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+  animation: fadeIn 0.5s ease both;
+}
+
+.modalcontent {
+  width: 60vw;
+  height: 75vh;
+  max-width: 1000px;
+  padding: 0;
+  margin: 0;
+}
+
+dialog::backdrop {
+  animation: fadeIn 0.5s ease both;
+  background: rgb(255 255 255 / 40%);
+  z-index: 2;
+  backdrop-filter: blur(5px);
+}
+.x {
+  filter: grayscale(1);
+  border: white 0px;
+  background: none;
+  position: fixed;
+  top: 12vh;
+  right: calc((100vw - 60vw - 4rem) / 2);
+  transition: ease filter, transform 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+}
+.x:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+dialog h2 {
+  font-weight: 600;
+  font-size: clamp(20px, 3vw, 25px);
+  padding-bottom: 1rem;
+}
+
+dialog h5 {
+  margin: 0;
+  margin-bottom: 0.7rem;
+  font-size: clamp(15px, 3vw, 20px);
+  color: gray;
+  font-weight: normal;
+}
+
+dialog p {
+  font-size: clamp(12px, 2vw, 25px);
+  padding: 0.5rem 0;
+}
+dialog .credits {
+  margin-top: 1rem;
+  color: gray;
+  font-size: 0.8rem;
+}
+dialog img {
+  width: 60vw;
+  height: 80%;
+  max-width: 60vw;
+  object-fit: cover;
+  /*position: relative;
+  left: -1vw;*/
+}
+
+/* width */
+#dialog::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#dialog::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* Handle */
+#dialog::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#logger {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 99999999;
+  margin: 15px calc(clamp(30px, max(4vw, 6vh), 50px) / 4);
+}
+.uibtn {
+  background-color: rgba(40, 43, 47, 0.8);
+  cursor: pointer;
+  transition: background-color 100ms linear;
+  border-radius: 50%;
+  border: 2px solid #0000001f;
+  width: clamp(30px, max(4vw, 6vh), 50px);
+  height: clamp(30px, max(4vw, 6vh), 50px);
+  color: rgb(139 144 151);
+  padding: 0;
+  margin: 0;
+  line-height: calc(clamp(30px, max(4vw, 6vh), 50px) / 4);
+}
+.uibtn:hover {
+  background-color: #dbdbdb;
+}
+.uibtn a {
+  text-decoration: none;
+  color: rgb(139 144 151);
+}
+.material-icons {
+  font-size: clamp(15px, max(2vw, 3vh), 30px);
+}
+.instruction {
+  max-height: 85vh;
+  max-width: 450px;
+}

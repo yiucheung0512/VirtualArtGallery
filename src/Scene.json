@@ -1,0 +1,293 @@
+{
+  "sheetsById": {
+    "Scene": {
+      "staticOverrides": {
+        "byObject": {
+          "building2": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 5.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 3.1415926535,
+              "z": 0
+            },
+            "scale": {
+              "x": 1.1,
+              "z": 1.1
+            }
+          },
+          "building": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": -5.5
+            },
+            "scale": {
+              "z": 1.1,
+              "x": 1.1
+            }
+          },
+          "Panel6": {
+            "position": {
+              "x": -5.66,
+              "y": 2.33,
+              "z": 2.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 1.571,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.8
+            }
+          },
+          "Panel8": {
+            "position": {
+              "x": 2.8,
+              "y": 2.33,
+              "z": -5.7
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "y": 1,
+              "x": 0.9
+            }
+          },
+          "light1": {
+            "position": {
+              "y": 5,
+              "z": -5,
+              "x": 0
+            },
+            "intensity": 1
+          },
+          "FloorPanel": {
+            "position": {
+              "x": 0.015,
+              "z": 0,
+              "y": 0.015
+            },
+            "rotation": {
+              "x": -1.57079,
+              "y": 0
+            },
+            "scale": {
+              "y": 2.3,
+              "x": 1.1
+            }
+          },
+          "fps": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "Camera": {
+            "position": {
+              "x": 0,
+              "y": 2.33,
+              "z": 0
+            },
+            "rotation": {
+              "y": 0
+            }
+          },
+          "Panel1": {
+            "position": {
+              "x": -2.8,
+              "y": 2.33,
+              "z": -5.7
+            },
+            "scale": {
+              "x": 0.9
+            }
+          },
+          "Panel2": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 2.8,
+              "y": 2.33,
+              "z": -5.7
+            },
+            "scale": {
+              "x": 0.9
+            }
+          },
+          "Panel4": {
+            "position": {
+              "x": 5.7,
+              "y": 2.33,
+              "z": -2.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": -1.56,
+              "z": 0
+            },
+            "scale": {
+              "x": 0.8
+            }
+          },
+          "Panel3": {
+            "position": {
+              "x": 5.66,
+              "y": 2.33,
+              "z": 2.5
+            },
+            "rotation": {
+              "y": -1.56
+            },
+            "scale": {
+              "x": 0.8
+            }
+          },
+          "Panel5": {
+            "rotation": {
+              "x": 0,
+              "y": 1.571,
+              "z": 0
+            },
+            "position": {
+              "x": -5.61,
+              "y": 2.33,
+              "z": -2.5
+            },
+            "scale": {
+              "z": 1,
+              "x": 0.8
+            }
+          },
+          "Panel7": {
+            "position": {
+              "x": -2.8,
+              "y": 2.33,
+              "z": -5.7
+            },
+            "scale": {
+              "x": 0.9
+            }
+          },
+          "Panel9": {
+            "rotation": {
+              "y": -1.56
+            },
+            "position": {
+              "z": 2.5
+            },
+            "scale": {
+              "x": 0.8
+            }
+          },
+          "Panel10": {
+            "scale": {
+              "x": 0.8
+            },
+            "position": {
+              "z": -2.5,
+              "x": 5.66
+            },
+            "rotation": {
+              "y": -1.56
+            }
+          },
+          "Panel11": {
+            "position": {
+              "x": -5.66,
+              "z": 2.5
+            },
+            "rotation": {
+              "y": 1.56
+            },
+            "scale": {
+              "x": 0.8
+            }
+          },
+          "Panel12": {
+            "position": {
+              "z": -2.5,
+              "x": -5.66
+            },
+            "rotation": {
+              "y": 1.56
+            },
+            "scale": {
+              "x": 0.8
+            }
+          },
+          "BackPanel1": {
+            "position": {
+              "x": 0,
+              "y": 2.33,
+              "z": -11.8
+            },
+            "scale": {
+              "x": 2.5,
+              "y": 2
+            }
+          },
+          "BackPanel2": {
+            "position": {
+              "x": 0,
+              "z": 11.8,
+              "y": 2.33
+            },
+            "scale": {
+              "x": 3,
+              "y": 1.3
+            },
+            "rotation": {
+              "y": 3.1415926535
+            }
+          },
+          "SidePanel2": {
+            "rotation": {
+              "y": -1.571
+            },
+            "scale": {
+              "y": 2,
+              "x": 4.3
+            },
+            "position": {
+              "x": 6.3
+            }
+          },
+          "SidePanel1": {
+            "rotation": {
+              "y": 1.571
+            },
+            "position": {
+              "x": -6.3
+            },
+            "scale": {
+              "y": 2,
+              "x": 4.3
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": [
+    "CRQAPMj9OcwXtRE8",
+    "1dJ1As1pkQ4RbYKj",
+    "4PSPgQNUn2mi4UBS",
+    "zXrr-J_cNfwVspCU",
+    "MSKHKTXKuo8HhIXY",
+    "JsPvay09jZO7Wc25",
+    "tlmnM4WkhA7DsmXT"
+  ]
+}

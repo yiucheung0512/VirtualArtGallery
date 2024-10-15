@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="icon"
+      href="https://uploads.codesandbox.io/uploads/user/01b3ec77-4d23-4d38-91b7-6c85d9c440f8/sk2a-DBSUClogo.jpg"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Nova-UnicefVirtualArtGalley</title>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <dialog id="dialog"> </dialog>
+
+    <div id="mobileInterface" class="noSelect" style="z-index: 99999999;">
+      <div id="joystickWrapper1"></div>
+    </div>
+    <div id="logger">
+      <button class="uibtn" id="imager" onclick="imagemanager();">
+        <i class="material-icons">&#xe028;</i>
+      </button>
+      <button class="uibtn" onclick="menus();">
+        <i class="material-icons">&#xe5d2;</i>
+      </button>
+      <button class="uibtn" id="donate">
+        <a href="https://donation.unicef.org.hk/en-us?programme_id=2"
+          ><i class="material-icons">&#xe87d;</i></a
+        >
+      </button>
+    </div>
+  </body>
+  <script>
+    const removeWatermark = () => {
+      const ids = [];
+      const iframes = document.body.querySelectorAll("iframe");
+      for (const iframe of iframes) {
+        if (iframe.id.startsWith("sb__open-sandbox")) ids.push(iframe.id);
+      }
+      for (const id of ids) {
+        const node = document.createElement("div");
+        node.style.setProperty("display", "none", "important");
+        node.id = id;
+        document.getElementById(id).remove();
+        document.body.appendChild(node);
+      }
+    };
+    setTimeout(removeWatermark, 1000);
+    setTimeout(removeWatermark, 1500);
+    //setTimeout(removeWatermark, 800);
+    /*@codesandbox devs, sorry for removing your anti-phising watermark. Yet the "Open Sandbox" button floats right ontop of my UI, I have no other choice. Sorry UwU*/
+    window.state = 0;
+    function imagemanager() {
+      var boards = document.getElementsByClassName("board");
+      var images = window.data;
+      //console.log(boards);
+      //console.log(images);
+      for (i = 1; i < boards.length; i++) {
+        var node = i;
+        if (window.state === 0) {
+          node += 12;
+          /*if (node > 22) {
+            node = node - 12;
+          }*/
+        }
+        //console.log(node);
+        //console.log(boards[i].src);
+        //console.log(images[node].imgLink);
+        //console.log(node + " state: " + state);
+        boards[i].src = images[node].imgLink;
+      }
+      if (window.state === 0) {
+        window.state = 1;
+      } else {
+        window.state = 0;
+      }
+      //console.log(window.state);
+    }
+    function menus() {
+      var dialog = document.getElementById("dialog");
+      dialog.innerHTML =
+        "<div style='text-align:center'><img class='instruction' src='" +
+        window.data[0].imgLink +
+        "'></div><button onclick='window.dialog.close();' aria-label='close' class='x'>❌</button>";
+      dialog.showModal();
+    }
+  </script>
+</html>
